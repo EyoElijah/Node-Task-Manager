@@ -3,8 +3,9 @@ import taskRoutes from "./routes/tasks.js";
 import connectDB from "./db/connect.js";
 import notFound from "./middleware/not-found.js";
 import errorHandlerMiddleware from "./middleware/error-handler.js";
+import dotenv from "dotenv";
+dotenv.config();
 
-import "dotenv/config.js";
 const app = express();
 
 // middleware
